@@ -1,0 +1,5 @@
+Log-log fit of total time vs N (slope ~ 2 expected for direct O(N^2) summation)
+seq   slope = 1.994   (over N = 1000..32000)
+omp   slope = 1.949   (over N = 1000..64000)
+mpi   slope = 1.981   (over N = 1000..64000)
+cuda  slope = 1.390   (over N = 1000..64000)

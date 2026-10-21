@@ -1,0 +1,10 @@
+=== A. correctness ===
+OpenMP vs sequential (N=2000, 10 iters):
+particles=2000  max|diff|=0.000e+00 (particle -1)  rms diff=0.000e+00  scale=4.463e+00  max rel=0.000e+00  NaNs=0
+PASS (tolerance 1.0e-06)
+MPI(4) vs sequential:
+particles=2000  max|diff|=0.000e+00 (particle -1)  rms diff=0.000e+00  scale=4.463e+00  max rel=0.000e+00  NaNs=0
+PASS (tolerance 1.0e-06)
+CUDA vs sequential (float round-off expected):
+particles=2000  max|diff|=2.384e-07 (particle 25)  rms diff=1.033e-08  scale=4.463e+00  max rel=5.342e-08  NaNs=0
+PASS (tolerance 1.0e-04)

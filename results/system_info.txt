@@ -1,0 +1,23 @@
+date: 2026-10-21T16:14:53+05:30
+--- cpu ---
+CPU(s):                                  16
+Model name:                              AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+Thread(s) per core:                      2
+Core(s) per socket:                      8
+Socket(s):                               1
+CPU(s) scaling MHz:                      55%
+CPU max MHz:                             5137.9038
+CPU min MHz:                             419.4210
+L2 cache:                                8 MiB (8 instances)
+L3 cache:                                16 MiB (1 instance)
+--- memory ---
+               total        used        free      shared  buff/cache   available
+Mem:            14Gi       9.5Gi       653Mi       181Mi       4.9Gi       5.5Gi
+--- compilers ---
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Cuda compilation tools, release 13.2, V13.2.86
+Build cuda_13.2.r13.2/compiler.37953736_0
+--- gpu ---
+name, memory.total [MiB], driver_version
+NVIDIA GeForce RTX 4050 Laptop GPU, 6141 MiB, 595.91.07

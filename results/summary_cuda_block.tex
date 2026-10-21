@@ -1,0 +1,16 @@
+\begin{table}
+\caption{CUDA execution time versus thread-block size (N=20000); aux = host-device transfer time.}
+\label{tab:cudablock}
+\begin{tabular}{rrrrr}
+\toprule
+block\_size & total\_s & avg\_iter\_s & speedup & aux\_s \\
+\midrule
+32 & 0.04333 & 0.004333 & 196.2 & 0.000178 \\
+64 & 0.03708 & 0.003708 & 229.3 & 0.000151 \\
+128 & 0.03673 & 0.003673 & 231.5 & 0.000159 \\
+256 & 0.03511 & 0.003511 & 242.2 & 0.000166 \\
+512 & 0.03123 & 0.003123 & 272.3 & 0.000146 \\
+1024 & 0.02918 & 0.002918 & 291.4 & 0.000173 \\
+\bottomrule
+\end{tabular}
+\end{table}

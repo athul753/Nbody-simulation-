@@ -1,0 +1,18 @@
+\begin{table}
+\caption{Strong scaling at N=20000.}
+\label{tab:scaling}
+\begin{tabular}{lrrrrrr}
+\toprule
+impl & n & p & total\_s & speedup & efficiency & karp\_flatt \\
+\midrule
+omp & 20000 & 1 & 8.4 & 1.012 & 1.012 & NaN \\
+omp & 20000 & 2 & 4.216 & 2.017 & 1.009 & -0.008568 \\
+omp & 20000 & 4 & 2.177 & 3.907 & 0.9767 & 0.007968 \\
+omp & 20000 & 8 & 1.111 & 7.658 & 0.9572 & 0.006384 \\
+mpi & 20000 & 1 & 8.456 & 1.006 & 1.006 & NaN \\
+mpi & 20000 & 2 & 4.269 & 1.992 & 0.9961 & 0.003957 \\
+mpi & 20000 & 4 & 2.186 & 3.891 & 0.9727 & 0.009342 \\
+mpi & 20000 & 8 & 1.269 & 6.701 & 0.8376 & 0.0277 \\
+\bottomrule
+\end{tabular}
+\end{table}
