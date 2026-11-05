@@ -1,0 +1,6 @@
+Validation run on Windows, separate from the original Linux measurements.
+Sequential/OpenMP: MinGW GCC 13.2, -O3 -ffp-contract=off -std=gnu11 (-fopenmp for OpenMP).
+CUDA: nvcc 13.4, MSVC 19.44, -O3 -arch=sm_89, on RTX 4050 Laptop GPU.
+For this native Windows validation only, a temporary pre-included header implements the existing clock_gettime interface with QueryPerformanceCounter. No project physics/header files were changed.
+This is a modest validation study (20 steps, 3 repeats), not the full default 100-step, 5-repeat study.
+MPI compiler/runtime unavailable; omitted and recorded in skipped.txt. Do not combine these measurements with the original Linux results into one benchmark population.

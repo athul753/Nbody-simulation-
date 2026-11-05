@@ -1,0 +1,17 @@
+2026-11-05T11:53:12+05:30
+MINGW64_NT-10.0-26200 athul_john 3.5.7-463ebcdc.x86_64 2025-03-03 17:26 UTC x86_64 Msys
+run_experiments.sh: line 39: lscpu: command not found
+run_experiments.sh: line 40: free: command not found
+gcc.exe (x86_64-posix-seh-rev0, Built by MinGW-Builds project) 13.2.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+run_experiments.sh: line 42: mpicc: command not found
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2026 NVIDIA Corporation
+Built on Sun_Sep_01_02:23:07_Pacific_Standard_Time_2026
+Cuda compilation tools, release 13.4, V13.4.92
+Build cuda_13.4.r13.4/compiler.38855100_0
+name, memory.total [MiB], driver_version
+NVIDIA GeForce RTX 4050 Laptop GPU, 6141 MiB, 621.14

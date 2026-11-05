@@ -1,0 +1,2 @@
+SKIP: nbody_mpi not built
+SKIP: nbody_cuda not built

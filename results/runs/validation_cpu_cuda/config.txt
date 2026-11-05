@@ -1,0 +1,30 @@
+ITERS=20
+REPS=3
+SIZES=1000 5000 10000
+SCALE_SIZES=1000 5000
+UNITS_LIST=1 2 4 8 16
+BLOCKS=64 256 512
+FIXED_UNITS=4
+CUDA_BLOCK=256
+MAX_SEQ_N=32000
+CORR_N=2000
+CORR_ITERS=10
+BIN_DIR=/c/Users/athul/AppData/Local/Temp/nbody-phase1
+OMP_PROC_BIND=unset
+OMP_PLACES=unset
+ddcb2141b15247749d0af72e1d8d48f9d0aca986
+warning: in the working copy of 'analyze.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'run_experiments.sh', LF will be replaced by CRLF the next time Git touches it
+ README.md          | 165 ++++++++++++++++++---
+ analyze.py         | 414 +++++++++++++++++++++++++++++++++--------------------
+ nbody_cuda.cu      |  46 +++++-
+ run_experiments.sh | 183 +++++++++++++----------
+ 4 files changed, 553 insertions(+), 255 deletions(-)
+7bdcbdb0acfd5bf3d77a059394ec271e39f310ac7b7b29ea133b928a985b4282 */c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda.exe
+31865a69168faf69b6e0b036cd3eb24035873f394963fd19bafdcfb6822af9fb */c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp.exe
+86554c4542e804f9afbd795cbd43c451ee43ff2c4f251f7a0ddb65ca1dd0250f */c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq.exe
+8e2604213fad0900d0cca3b0dc1fb7a2a6479a7c0a8996bf4a9c7750310677ee *common.h
+6a8037e3465d3e2fce67c11114e5400e6962eb1a7c9d99ca9ef5cdb04b35c8f0 *nbody_mpi.c
+ef32dacb1a5c389cb820202c6190f83453948f8d36db88a1d2903956edc813a8 *nbody_omp.c
+af4c6e9a00370f62a906fbb6e3ee96d7d3e1076a61141d001ab81f03f1c765dc *nbody_seq.c
+5f120397451b52c5e0cf570eef86466b501335abb2c0193730b7447deea85b6a *nbody_cuda.cu

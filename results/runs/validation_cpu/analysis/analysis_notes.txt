@@ -1,0 +1,11 @@
+Input: C:\Users\athul\Documents\cuda\Nbody-simulation-\results\runs\validation_cpu\results.csv
+Iterations per run: 5
+Runtime bars: median and observed min-max range; not confidence intervals.
+Speedup bars: baseline_min/parallel_max to baseline_max/parallel_min; not paired confidence intervals.
+CUDA total_s measures the device loop, excluding setup, warm-up and transfers.
+CUDA aux_s measures initial H2D + final D2H only; kernel + transfer is not full application time.
+MPI aux_s is the maximum accumulated collective time across ranks, including waiting.
+MPI collective time and rank-0 total are not an additive phase decomposition.
+Some runs are shorter than 10 ms. Longer runs and more repetitions are recommended.
+SKIP: naive-versus-tiled plots require measured cuda_compare results for both kernels.
+Generated 5 figures (PNG and PDF).

@@ -1,0 +1,2 @@
+[omp] N=5000 iterations=5 threads=4 total=0.1950 s avg_iter=0.0390 s
+RESULT,omp,5000,5,4,0.195000,0.039000,0.000000

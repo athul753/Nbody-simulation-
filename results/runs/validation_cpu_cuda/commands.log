@@ -1,0 +1,99 @@
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq data/star_1000.bin 20 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 4 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 256 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq data/star_1000.bin 20 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 4 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 256 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq data/star_1000.bin 20 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 4 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 256 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq data/star_5000.bin 20 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 4 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 256 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq data/star_5000.bin 20 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 4 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 256 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq data/star_5000.bin 20 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 4 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 256 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq data/star_10000.bin 20 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_10000.bin 20 4 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_10000.bin 20 256 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq data/star_10000.bin 20 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_10000.bin 20 4 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_10000.bin 20 256 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq data/star_10000.bin 20 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_10000.bin 20 4 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_10000.bin 20 256 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq data/star_1000.bin 20 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 1 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 2 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 4 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 8 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 16 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 64 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 256 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 512 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq data/star_1000.bin 20 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 1 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 2 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 4 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 8 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 16 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 64 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 256 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 512 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq data/star_1000.bin 20 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 1 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 2 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 4 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 8 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_1000.bin 20 16 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 64 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 256 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 512 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq data/star_5000.bin 20 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 1 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 2 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 4 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 8 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 16 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 64 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 256 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 512 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq data/star_5000.bin 20 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 1 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 2 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 4 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 8 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 16 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 64 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 256 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 512 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_seq data/star_5000.bin 20 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 1 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 2 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 4 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 8 
+/c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_omp data/star_5000.bin 20 16 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 64 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 256 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 512 
+env NBODY_CUDA_KERNEL=naive /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 256 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 256 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 256 
+env NBODY_CUDA_KERNEL=naive /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 256 
+env NBODY_CUDA_KERNEL=naive /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 256 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_1000.bin 20 256 
+env NBODY_CUDA_KERNEL=naive /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 256 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 256 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 256 
+env NBODY_CUDA_KERNEL=naive /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 256 
+env NBODY_CUDA_KERNEL=naive /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 256 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_5000.bin 20 256 
+env NBODY_CUDA_KERNEL=naive /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_10000.bin 20 256 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_10000.bin 20 256 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_10000.bin 20 256 
+env NBODY_CUDA_KERNEL=naive /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_10000.bin 20 256 
+env NBODY_CUDA_KERNEL=naive /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_10000.bin 20 256 
+env NBODY_CUDA_KERNEL=tiled /c/Users/athul/AppData/Local/Temp/nbody-phase1/nbody_cuda data/star_10000.bin 20 256 

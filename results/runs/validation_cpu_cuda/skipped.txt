@@ -1,0 +1,1 @@
+SKIP: nbody_mpi not built

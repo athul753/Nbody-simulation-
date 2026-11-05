@@ -1,0 +1,72 @@
+[seq] N=1000 iterations=5 total=0.0227 s avg_iter=0.0045 s
+RESULT,seq,1000,5,1,0.022692,0.004538,0.000000
+[omp] N=1000 iterations=5 threads=4 total=0.0120 s avg_iter=0.0024 s
+RESULT,omp,1000,5,4,0.012000,0.002400,0.000000
+[seq] N=1000 iterations=5 total=0.0264 s avg_iter=0.0053 s
+RESULT,seq,1000,5,1,0.026436,0.005287,0.000000
+[omp] N=1000 iterations=5 threads=4 total=0.0090 s avg_iter=0.0018 s
+RESULT,omp,1000,5,4,0.009000,0.001800,0.000000
+[seq] N=1000 iterations=5 total=0.0265 s avg_iter=0.0053 s
+RESULT,seq,1000,5,1,0.026544,0.005309,0.000000
+[omp] N=1000 iterations=5 threads=4 total=0.0200 s avg_iter=0.0040 s
+RESULT,omp,1000,5,4,0.020000,0.004000,0.000000
+[seq] N=5000 iterations=5 total=0.6582 s avg_iter=0.1316 s
+RESULT,seq,5000,5,1,0.658158,0.131632,0.000000
+[omp] N=5000 iterations=5 threads=4 total=0.1750 s avg_iter=0.0350 s
+RESULT,omp,5000,5,4,0.175000,0.035000,0.000000
+[seq] N=5000 iterations=5 total=0.6564 s avg_iter=0.1313 s
+RESULT,seq,5000,5,1,0.656439,0.131288,0.000000
+[omp] N=5000 iterations=5 threads=4 total=0.2270 s avg_iter=0.0454 s
+RESULT,omp,5000,5,4,0.227000,0.045400,0.000000
+[seq] N=5000 iterations=5 total=0.6137 s avg_iter=0.1227 s
+RESULT,seq,5000,5,1,0.613712,0.122742,0.000000
+[omp] N=5000 iterations=5 threads=4 total=0.2010 s avg_iter=0.0402 s
+RESULT,omp,5000,5,4,0.201000,0.040200,0.000000
+[seq] N=1000 iterations=5 total=0.0227 s avg_iter=0.0045 s
+RESULT,seq,1000,5,1,0.022663,0.004533,0.000000
+[omp] N=1000 iterations=5 threads=1 total=0.0260 s avg_iter=0.0052 s
+RESULT,omp,1000,5,1,0.026000,0.005200,0.000000
+[omp] N=1000 iterations=5 threads=2 total=0.0130 s avg_iter=0.0026 s
+RESULT,omp,1000,5,2,0.013000,0.002600,0.000000
+[omp] N=1000 iterations=5 threads=4 total=0.0070 s avg_iter=0.0014 s
+RESULT,omp,1000,5,4,0.007000,0.001400,0.000000
+[seq] N=1000 iterations=5 total=0.0254 s avg_iter=0.0051 s
+RESULT,seq,1000,5,1,0.025413,0.005083,0.000000
+[omp] N=1000 iterations=5 threads=1 total=0.0240 s avg_iter=0.0048 s
+RESULT,omp,1000,5,1,0.024000,0.004800,0.000000
+[omp] N=1000 iterations=5 threads=2 total=0.0120 s avg_iter=0.0024 s
+RESULT,omp,1000,5,2,0.012000,0.002400,0.000000
+[omp] N=1000 iterations=5 threads=4 total=0.0090 s avg_iter=0.0018 s
+RESULT,omp,1000,5,4,0.009000,0.001800,0.000000
+[seq] N=1000 iterations=5 total=0.0218 s avg_iter=0.0044 s
+RESULT,seq,1000,5,1,0.021766,0.004353,0.000000
+[omp] N=1000 iterations=5 threads=1 total=0.0250 s avg_iter=0.0050 s
+RESULT,omp,1000,5,1,0.025000,0.005000,0.000000
+[omp] N=1000 iterations=5 threads=2 total=0.0140 s avg_iter=0.0028 s
+RESULT,omp,1000,5,2,0.014000,0.002800,0.000000
+[omp] N=1000 iterations=5 threads=4 total=0.0080 s avg_iter=0.0016 s
+RESULT,omp,1000,5,4,0.008000,0.001600,0.000000
+[seq] N=5000 iterations=5 total=0.6741 s avg_iter=0.1348 s
+RESULT,seq,5000,5,1,0.674085,0.134817,0.000000
+[omp] N=5000 iterations=5 threads=1 total=0.6600 s avg_iter=0.1320 s
+RESULT,omp,5000,5,1,0.660000,0.132000,0.000000
+[omp] N=5000 iterations=5 threads=2 total=0.2970 s avg_iter=0.0594 s
+RESULT,omp,5000,5,2,0.297000,0.059400,0.000000
+[omp] N=5000 iterations=5 threads=4 total=0.2460 s avg_iter=0.0492 s
+RESULT,omp,5000,5,4,0.246000,0.049200,0.000000
+[seq] N=5000 iterations=5 total=0.5718 s avg_iter=0.1144 s
+RESULT,seq,5000,5,1,0.571850,0.114370,0.000000
+[omp] N=5000 iterations=5 threads=1 total=0.5610 s avg_iter=0.1122 s
+RESULT,omp,5000,5,1,0.561000,0.112200,0.000000
+[omp] N=5000 iterations=5 threads=2 total=0.3450 s avg_iter=0.0690 s
+RESULT,omp,5000,5,2,0.345000,0.069000,0.000000
+[omp] N=5000 iterations=5 threads=4 total=0.1860 s avg_iter=0.0372 s
+RESULT,omp,5000,5,4,0.186000,0.037200,0.000000
+[seq] N=5000 iterations=5 total=0.6084 s avg_iter=0.1217 s
+RESULT,seq,5000,5,1,0.608420,0.121684,0.000000
+[omp] N=5000 iterations=5 threads=1 total=0.6420 s avg_iter=0.1284 s
+RESULT,omp,5000,5,1,0.642000,0.128400,0.000000
+[omp] N=5000 iterations=5 threads=2 total=0.3410 s avg_iter=0.0682 s
+RESULT,omp,5000,5,2,0.341000,0.068200,0.000000
+[omp] N=5000 iterations=5 threads=4 total=0.1950 s avg_iter=0.0390 s
+RESULT,omp,5000,5,4,0.195000,0.039000,0.000000

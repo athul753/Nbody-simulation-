@@ -1,0 +1,15 @@
+Correctness checks (must all pass before benchmarks)
+[seq] N=2000 iterations=10 total=0.1900 s avg_iter=0.0190 s
+RESULT,seq,2000,10,1,0.190046,0.019005,0.000000
+[omp] N=2000 iterations=10 threads=4 total=0.0680 s avg_iter=0.0068 s
+RESULT,omp,2000,10,4,0.068000,0.006800,0.000000
+particles=2000  max|diff|=0.000e+00 (particle -1)  rms diff=0.000e+00  scale=4.463e+00  max rel=0.000e+00  NaNs=0
+PASS (tolerance 1.0e-06)
+[cuda_naive] N=2000 iterations=10 block=256 grid=8 total=0.0037 s avg_iter=0.0004 s transfer=0.0018 s (NVIDIA GeForce RTX 4050 Laptop GPU)
+RESULT,cuda_naive,2000,10,256,0.003688,0.000369,0.001805
+particles=2000  max|diff|=2.384e-07 (particle 25)  rms diff=1.017e-08  scale=4.463e+00  max rel=5.342e-08  NaNs=0
+PASS (tolerance 1.0e-04)
+[cuda] N=2000 iterations=10 block=256 grid=8 total=0.0019 s avg_iter=0.0002 s transfer=0.0002 s (NVIDIA GeForce RTX 4050 Laptop GPU)
+RESULT,cuda,2000,10,256,0.001939,0.000194,0.000211
+particles=2000  max|diff|=2.384e-07 (particle 25)  rms diff=1.033e-08  scale=4.463e+00  max rel=5.342e-08  NaNs=0
+PASS (tolerance 1.0e-04)

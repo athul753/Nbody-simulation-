@@ -2,6 +2,7 @@
  * nbody_cuda.cu - CUDA (GPU) N-body simulation.
  *
  * Usage: ./nbody_cuda <input.bin> <iterations> <block_size> [output.bin]
+ * Set NBODY_CUDA_KERNEL=naive for the global-memory baseline (default: tiled).
  *
  * Mapping: one GPU thread per particle i. The inner j-loop is "tiled":
  * each thread block cooperatively loads blockDim.x particles (x,y,z,m) into
@@ -20,6 +21,7 @@
  */
 #include "common.h"
 #include <cuda_runtime.h>
+#include <string.h>
 
 #define CUDA_CHECK(call) do {                                                   \
     cudaError_t e_ = (call);                                                    \
@@ -29,6 +31,28 @@
         exit(EXIT_FAILURE);                                                     \
     }                                                                           \
 } while (0)
+
+/* Same force arithmetic/order as tiled, without cooperative shared-memory loads. */
+__global__ void force_naive(Particle *p, int n)
+{
+    const int i = blockIdx.x * blockDim.x + threadIdx.x;
+    if (i >= n) return;
+    const float xi = p[i].x, yi = p[i].y, zi = p[i].z;
+    float fx = 0.f, fy = 0.f, fz = 0.f;
+    for (int j = 0; j < n; j++) {
+        const float dx = p[j].x - xi;
+        const float dy = p[j].y - yi;
+        const float dz = p[j].z - zi;
+        const float d2 = dx * dx + dy * dy + dz * dz + EPS2;
+        const float inv = 1.0f / sqrtf(d2);
+        const float inv3 = inv * inv * inv;
+        const float s = p[j].m * inv3;
+        fx += dx * s; fy += dy * s; fz += dz * s;
+    }
+    p[i].vx += DT * fx;
+    p[i].vy += DT * fy;
+    p[i].vz += DT * fz;
+}
 
 __global__ void force_kernel(Particle *p, int n)
 {
@@ -85,6 +109,14 @@ int main(int argc, char **argv)
     const int iters = parse_int(argv[2], "iterations");
     const int block = parse_int(argv[3], "block_size");
     const char *out = (argc > 4) ? argv[4] : NULL;
+    const char *kernel = getenv("NBODY_CUDA_KERNEL");
+    if (!kernel) kernel = "tiled";
+    if (strcmp(kernel, "tiled") && strcmp(kernel, "naive")) {
+        fprintf(stderr, "NBODY_CUDA_KERNEL must be tiled or naive\n");
+        return EXIT_FAILURE;
+    }
+    const bool naive = !strcmp(kernel, "naive");
+    const char *impl = naive ? "cuda_naive" : "cuda";
 
     cudaDeviceProp prop;
     CUDA_CHECK(cudaGetDeviceProperties(&prop, 0));
@@ -112,14 +144,16 @@ int main(int argc, char **argv)
 
     /* warm-up launch so context/JIT start-up is not timed; the warm-up changes the
        velocities, so the initial state is restored from the host copy afterwards */
-    force_kernel<<<grid, block, shmem>>>(d, n);
+    if (naive) force_naive<<<grid, block>>>(d, n);
+    else force_kernel<<<grid, block, shmem>>>(d, n);
     CUDA_CHECK(cudaGetLastError());
     CUDA_CHECK(cudaDeviceSynchronize());
     CUDA_CHECK(cudaMemcpy(d, h, (size_t)n * sizeof(Particle), cudaMemcpyHostToDevice));
 
     CUDA_CHECK(cudaEventRecord(e0));
     for (int it = 0; it < iters; it++) {
-        force_kernel<<<grid, block, shmem>>>(d, n);
+        if (naive) force_naive<<<grid, block>>>(d, n);
+        else force_kernel<<<grid, block, shmem>>>(d, n);
         position_kernel<<<grid, block>>>(d, n);
     }
     CUDA_CHECK(cudaEventRecord(e1));
@@ -135,13 +169,15 @@ int main(int argc, char **argv)
     CUDA_CHECK(cudaMemcpy(h, d, (size_t)n * sizeof(Particle), cudaMemcpyDeviceToHost));
     xfer += wall_time() - c1;
 
-    printf("[cuda] N=%d iterations=%d block=%d grid=%d total=%.4f s avg_iter=%.4f s transfer=%.4f s (%s)\n",
-           n, iters, block, grid, total, total / iters, xfer, prop.name);
-    print_result("cuda", n, iters, block, total, total / iters, xfer);
+    printf("[%s] N=%d iterations=%d block=%d grid=%d total=%.4f s avg_iter=%.4f s transfer=%.4f s (%s)\n",
+           impl, n, iters, block, grid, total, total / iters, xfer, prop.name);
+    print_result(impl, n, iters, block, total, total / iters, xfer);
 
     if (out) write_particles(out, h, n);
 
     cudaFree(d);
+    cudaEventDestroy(e0);
+    cudaEventDestroy(e1);
     free(h);
     return 0;
 }
